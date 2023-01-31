@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10%;
+    justify-self: center;
+}
+
+#snowboard{
+    max-width: 375px;
+}
