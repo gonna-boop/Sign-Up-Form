@@ -14,7 +14,7 @@ html, body{
     padding-right: 30%;
     padding-top: 10%;
     justify-self: center;
-    background-color: #C38D9E;
+    background-color: white;
     padding-bottom: 10%;
     height: 100%;
 }
@@ -77,4 +77,8 @@ html, body{
     list-style-type: none;
     display: flex;
     flex-direction: column;
+}
+
+.form-group #btn{
+    background-color: #c08a65;
 }
