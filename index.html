@@ -5,36 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up-Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="inner-box">
             <div id="image-side">
-                <img id="snowboard" src="pics/snowboard.jpg" alt="Snowboard in snow">
+                <img id="snowboard" src="pics/snowboard.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div id="class-side">
                 <div id="above-form">
-                    <p>Sign up for lessons now!  Lessons range from beginner to advanced.  We also offer
-                        lessons in both private and group settings!
-                    </p>
+                    <p>Sign up for lessons now!</p>
                 </div>
-                <form>
-                    <label for="name"> Name</label>
-                    <input type="text" id="name" name="user-name"/>
-    
-                    <label for="email">Email</label>
-                    <input type="email" id="mail" name="user-email" />
-    
-                    <label for="password">Password</label>
-                    <input type="password" id="password" password="user-password"/>
-    
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="conf-password"/>
-                </form>
+                        <div class="signup-form">
+                            <form action="/examples/actions/confirmation.php" method="post">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                        <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                    </div>        	
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                </div>        
+                                <div class="form-group">
+                                    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                                </div>
+                            </form>
+                            <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+                        </div>   
                 <div id="below-form">
                     <p>Having trouble with the form?  Click here to send a message to our team!</p>
-                    <button>Support</button>
+                    <button type="button" class="btn btn-outline-light">Contact Support</button>
                 </div>
             </div>
         </div>
